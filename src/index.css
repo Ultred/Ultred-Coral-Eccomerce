@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+.no-arrow::-webkit-inner-spin-button,
+.no-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.no-arrow {
+  appearance: none;
+  -moz-appearance: textfield; /* For Firefox */
+}
+.inputField {
+  @apply outline-none p-4 bg-colorgray w-full rounded-md;
+}
+
+.inputField:focus {
+  box-shadow: inset 0px -2px 0px #1e2832;
+}
